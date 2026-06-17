@@ -36,20 +36,15 @@ The dataset contains:
 - Certain categories require frequent restocking
 
 ## Screenshorts
-## Medicine Data Analysis: This table displays medicine details, stock levels, prices, and sales data, helping in effective inventory and sales management.
-<img width="556" height="119" alt="Screenshot 2026-06-17 084102" src="https://github.com/user-attachments/assets/561f6e75-0e3a-488f-a2a4-963b8bca33c5" />
+<img width="901" height="527" alt="Screenshot 2026-06-17 181833" src="https://github.com/user-attachments/assets/577c3f3d-9f64-4389-bc0e-2ee441d073b7" />
 
+<img width="1439" height="630" alt="Screenshot 2026-06-17 181943" src="https://github.com/user-attachments/assets/92a28923-d09e-402f-9415-3ee1132e5a08" />
 
-## Medicine Sales Analysis: This chart illustrates the monthly sales performance of medicines and helps in analyzing sales trends for better inventory management.
-<img width="600" height="385" alt="Screenshot 2026-06-17 093535" src="https://github.com/user-attachments/assets/de8b1ce0-fe80-45b3-802b-0899a0316576" />
+<img width="1102" height="406" alt="Screenshot 2026-06-17 182036" src="https://github.com/user-attachments/assets/65bc2c6a-6336-4f67-83f0-eba59193729d" />
 
+<img width="1085" height="396" alt="Screenshot 2026-06-17 182111" src="https://github.com/user-attachments/assets/6526862d-b3b2-494f-b7f4-e94935d589cc" />
 
-## Medicine Category Distribution: This pie chart represents the percentage distribution of medicine categories, helping to analyze inventory composition and stock management.
-<img width="606" height="370" alt="Screenshot 2026-06-17 093638" src="https://github.com/user-attachments/assets/802a097b-ce9e-4301-bbbb-a020b3153b5f" />
-
-
-## Medicine Details Analysis: This table presents the information of a medicine, including stock availability, price, and monthly sales, supporting efficient inventory management.
-<img width="515" height="51" alt="Screenshot 2026-06-17 084312" src="https://github.com/user-attachments/assets/bfaf1914-97ea-46cc-bc66-f50891d6eff7" />
+<img width="1097" height="469" alt="Screenshot 2026-06-17 182141" src="https://github.com/user-attachments/assets/336b3211-66b3-43dc-a7e5-8c73c19801a7" />
 
 
 ## 🚀 Conclusion
