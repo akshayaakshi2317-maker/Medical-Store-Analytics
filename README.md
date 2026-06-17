@@ -38,11 +38,11 @@ The dataset contains:
 
 
 ## Medicine Sales Analysis: This chart illustrates the monthly sales performance of medicines and helps in analyzing sales trends for better inventory management.
-<img width="769" height="513" alt="Screenshot 2026-06-17 090023" src="https://github.com/user-attachments/assets/400f197e-8b94-4f13-beca-b38663849005" />
+<img width="600" height="385" alt="Screenshot 2026-06-17 093535" src="https://github.com/user-attachments/assets/de8b1ce0-fe80-45b3-802b-0899a0316576" />
 
 
 ## Medicine Category Distribution: This pie chart represents the percentage distribution of medicine categories, helping to analyze inventory composition and stock management.
-<img width="764" height="511" alt="Screenshot 2026-06-17 090128" src="https://github.com/user-attachments/assets/d85e34cb-a19f-4f4f-b20b-b80f30cffda8" />
+<img width="606" height="370" alt="Screenshot 2026-06-17 093638" src="https://github.com/user-attachments/assets/802a097b-ce9e-4301-bbbb-a020b3153b5f" />
 
 
 ## Medicine Details Analysis: This table presents the information of a medicine, including stock availability, price, and monthly sales, supporting efficient inventory management.
