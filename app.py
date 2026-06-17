@@ -10,25 +10,19 @@ st.set_page_config(
 
 # ---------------- LOGIN PAGE ----------------
 
-USERNAME = "admin"
-PASSWORD = "1234"
-
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
 if not st.session_state.logged_in:
     st.title("💊 Medical Store Login")
 
-    username = st.text_input("Username")
-    password = st.text_input("Password", type="password")
+    name = st.text_input("Enter Your Name")
+    email = st.text_input("Enter Your Email")
 
     if st.button("Login"):
-        if username == USERNAME and password == PASSWORD:
-            st.session_state.logged_in = True
-            st.success("Login Successful!")
-            st.rerun()
-        else:
-            st.error("Invalid Username or Password")
+        st.session_state.logged_in = True
+        st.session_state.name = name
+        st.rerun()
 
     st.stop()
 
@@ -64,24 +58,20 @@ data = {
 
 df = pd.DataFrame(data)
 
-# ---------------- SIDEBAR ----------------
-
+# Sidebar
 st.sidebar.title("💊 Medical Store")
+st.sidebar.write(f"Welcome, {st.session_state.name}")
 
 if st.sidebar.button("Logout"):
     st.session_state.logged_in = False
     st.rerun()
 
-st.sidebar.header("Filters")
-
 category = st.sidebar.selectbox(
     "Select Category",
-    ["All"] + sorted(df["Category"].unique().tolist())
+    ["All"] + sorted(df["Category"].unique())
 )
 
 search = st.sidebar.text_input("Search Medicine")
-
-# ---------------- FILTERING ----------------
 
 filtered_df = df.copy()
 
@@ -93,8 +83,7 @@ if search:
         filtered_df["Medicine_Name"].str.contains(search, case=False)
     ]
 
-# ---------------- DASHBOARD ----------------
-
+# Dashboard
 st.title("💊 Medical Store Management System")
 
 col1, col2, col3 = st.columns(3)
@@ -103,19 +92,17 @@ col1.metric("Total Medicines", len(df))
 col2.metric("Total Stock", df["Stock"].sum())
 col3.metric("Total Monthly Sales", df["Monthly_Sales"].sum())
 
-st.subheader("📋 Medicine Details")
+st.subheader("Medicine Details")
 st.dataframe(filtered_df, use_container_width=True)
 
-st.subheader("⚠️ Low Stock Medicines (Stock < 50)")
-low_stock = df[df["Stock"] < 50]
-st.dataframe(low_stock, use_container_width=True)
+st.subheader("Low Stock Medicines")
+st.dataframe(df[df["Stock"] < 50], use_container_width=True)
 
-st.subheader("📈 Top Selling Medicines")
+st.subheader("Top Selling Medicines")
 top_sales = df.sort_values(by="Monthly_Sales", ascending=False).head(10)
 st.bar_chart(top_sales.set_index("Medicine_Name")["Monthly_Sales"])
 
-st.subheader("📊 Category Wise Stock")
-category_stock = df.groupby("Category")["Stock"].sum()
-st.bar_chart(category_stock)
+st.subheader("Category Wise Stock")
+st.bar_chart(df.groupby("Category")["Stock"].sum())
 
-st.success("✅ Medical Store Management Dashboard Loaded Successfully!")
+st.success("Dashboard Loaded Successfully!")
