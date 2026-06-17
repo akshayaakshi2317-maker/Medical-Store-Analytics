@@ -1,5 +1,8 @@
 # Medical Store Management - Data Analytics Project
 
+## Demo
+https://medical-store-analytics-dzju6kqw8ftyme4ykmcwjb.streamlit.app/
+
 ## 📊 Overview
 This project analyzes medical store data to improve medicine stock management, sales tracking, and inventory monitoring.
 
@@ -51,3 +54,5 @@ The dataset contains:
 
 ## 🚀 Conclusion
 Data analytics helps medical stores manage inventory efficiently, reduce medicine shortages, and improve sales monitoring through visualization and analysis.
+
+
